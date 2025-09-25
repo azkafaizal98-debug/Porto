@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Hero */
+
+.hero_img{
+    background-image:url(../image/hero.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+ /*Panel  */
+
+.container-info-panel{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info-panel{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.judul-info-panel{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-panel p{
+    font-size: 12px;
+}
+
+.info-panel .fas,.fab{
+    font-size: 30px;
+    color: salmon;
+    margin-bottom: 15px;
+}
+
+.container-paket-belajar{
+    background-color: azure;
+    margin-top: 50px;
+}
+
+/* Card */
+
+.header{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.header hr{
+    width: 20%;
+    margin: auto;
+    border: 2px solid salmon;
+    margin-top: 3px;
+}
+
+.Container-Crad-flex{
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-items{
+    width: 400px;
+    padding: 30px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px -10px black;
+    border-radius: 8px;
+}
+
+.card-items img{
+    width: 100%;
+    border-radius: 8px;
+    padding-bottom: 5px;
+}
+
+.card-items p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-items button{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    border: 2px solid rgb(255, 123, 0);
+    font-size: 14px;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.card-items button:hover {
+    background-color: salmon;
+    color: white;
+}
+
+/* Showcase */
+
+.container-showcase{
+    margin-top: 50px;
+}
+
+.showcase-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.showcase-items{
+    width: 500px;
+}
+
+.showcase-items img{
+    width: 100%;
+}
+
+.showcase-items p{
+    margin-top: 18px;
+    line-height: 20px;
+}
+
+.showcase-items button{
+    margin-top: 40px;
+    width: 50%;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.showcase-items button:hover{
+    color: salmon;
+}
+
+.showcase-items hr{
+    width: 50%;
+    margin: auto;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+.showcase-items hr:hover{
+    width: 10%;
+}
+
+/* Galeri */
+.container-galeri{
+    width: 100%;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.container-galeri h2{
+    padding-top: 45px;
+    text-align: center;
+}
+
+.container-galeri hr{
+    width: 30%;
+    margin: auto;
+    border: 2px solid salmon;
+    margin-top: 12px;
+}
+
+.galeri-flex{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.galeri-items{
+    width: 400px;
+    margin: 10px;
+}
+
+.galeri-items img{
+    width: 100%;
+}
+
+.galeri-items img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.container-testimoni{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.testimoni-flex{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testimoni-items{
+    width: 300px;
+    background-color: azure;
+    box-shadow: 0px 0px 20px -10px;
+    padding: 18px;
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.testimoni-items img{
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.testimoni-items q{
+    font-size: 12px;
+    margin-top: 50px;
+    line-height: 8px;
+}
+
+/* footer */
+.container-footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: salmon;
+    height: 100%;
+}
+
+.footer-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.logo-footer{
+    width: 400px;
+}
+
+.logo-footer img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.text-footer{
+    width: 600px;
+    text-align: right;
+}
+
+.text-footer p{
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.footer-flex .fab{
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
