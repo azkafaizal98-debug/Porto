@@ -91,7 +91,7 @@
 }
 
 
-@media (max-width: 412px){
+@media (max-width: 612px){
     /* Layout Grid yang Ringkas & Ke Tengah */
 .skills-grid {
     display: grid;
