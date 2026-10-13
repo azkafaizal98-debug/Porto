@@ -1,0 +1,61 @@
+/* Galery */
+.container-galery {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.galery-flex {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galery-items {
+    width: 70%;
+    height: 40%;
+    background-repeat: no-repeat;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galery-items img {
+    width: 80%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.galery-items img:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+/* Sertifikat */
+.container-sertifikat {
+    width: 100%;
+    display: flex;
+}
+
+.sertifikat-flex {
+    width: 100%;
+    flex: 0 0 5rem;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
+}
+
+.sertifikat-items {
+    width: 1000px;
+    z-index: 1;
+}
+
+.sertifikat-items img {
+    width: 100%;
+    border-radius: 0;
+}

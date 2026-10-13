@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="skills-container">
+    <h2 class="section-title">MY <span>SKILLS</span></h2>
+
+    <!-- Grid Ikon Ringkas -->
+    <div class="skills-grid">
+        <div class="skill-card" onclick="openSkillModal('js')">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+        </div>
+        <div class="skill-card" onclick="openSkillModal('docker')">
+            <i class="fab fa-docker"></i>
+            <span>Docker</span>
+        </div>
+        <div class="skill-card" onclick="openSkillModal('java')">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+        </div>
+        <div class="skill-card" onclick="openSkillModal('linux')">
+            <i class="fab fa-linux"></i>
+            <span>Arch Linux</span>
+        </div>
+        <div class="skill-card" onclick="openSkillModal('mariadb')">
+            <i class="fas fa-database"></i>
+            <span>MariaDB</span>
+        </div>
+        <div class="skill-card" onclick="openSkillModal('github')">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </div>
+    </div>
+
+    <!-- Modal Pop-up Detail Skill -->
+    <div id="skill-modal" class="modal" onclick="closeSkillModal(event)">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeSkillModal(true)">&times;</span>
+            <h3 id="modal-title">Skill Detail</h3>
+            <p id="modal-desc">Deskripsi skill...</p>
+            <div id="modal-tags" class="tags-container"></div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

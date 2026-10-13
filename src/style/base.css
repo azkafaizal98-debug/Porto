@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --grey: #393E46;
+    --transparant: #a1a1a1;
+    --orange: rgb(255, 81, 0);
+    --grey-black: #23272A;
+    --coklat: #7a4c1f;
+    --hijau-layar: #00FF66;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span {
+    color: var(--orange);
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            #000000 40%,
+            #393E46 80%,
+            rgba(255, 81, 0, 0.15) 100%
+        );
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+
+.mode {
+    background: linear-gradient(to bottom,
+            #FFFFFF 0%,
+            #FFF5EC 40%,
+            #FFE0B2 80%,
+            rgba(255, 150, 50, 0.2) 100%
+        );
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

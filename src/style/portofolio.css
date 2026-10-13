@@ -1,0 +1,118 @@
+.container-portofolio {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container-portofolio h2 {
+    font-size: 30px;
+}
+
+.container-portofolio hr {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.portofolio-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Wajib ada agar card turun ke bawah jika tidak muat */
+    padding: 10px;
+    gap: 20px; /* Jarak antar card lebih rapi */
+    margin-top: 40px;
+}
+
+.portofolio-items {
+    width: 100%; /* 1 card memenuhi layar di HP */
+    max-width: 350px; /* Batasan lebar agar tetap proporsional */
+    margin: 0;
+    text-align: start;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    padding-bottom: 15px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            #000000 40%,
+            rgba(255, 81, 0, 0.15) 100%
+        );
+    color: white;
+}
+
+/* Untuk layar tablet / laptop kecil (2 kolom) */
+@media (min-width: 640px) {
+    .portofolio-items {
+        width: 45%;
+    }
+}
+
+/* Untuk layar komputer / desktop (3-4 kolom) */
+@media (min-width: 1024px) {
+    .portofolio-items {
+        width: 23%;
+    }
+}
+
+.portofolio-items:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 12px var(--orange);
+}
+
+.portofolio-img,
+img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.portofolio-judul {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.portofolio-deskripsi {
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--orange);
+    opacity: 0.5;
+}
+
+.tools {
+    display: flex;
+    padding: 20px;
+}
+
+.tools .html,
+.css {
+    border: 1.3px solid var(--orange);
+    padding: 12px;
+    border-radius: 20px;
+    color: var(--orange);
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.demo {
+    display: flex;
+    padding: 20px;
+}
+
+.demo a {
+    margin-right: 10px;
+    border: 1.8px solid var(--orange);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.demo a:hover {
+    background-color: var(--orange);
+    border: 1.8px solid white;
+    opacity: 0.6;
+    color: white;
+}

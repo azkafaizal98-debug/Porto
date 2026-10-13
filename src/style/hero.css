@@ -1,0 +1,102 @@
+.container-hero-img {
+    width: 100%;
+    background-image: url(/items/image/background3.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: start;
+}
+
+.text1 {
+    width: 100%; /* Default 100% agar responsif di HP */
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.type-items {
+    width: 100%; /* Default 100% agar terpisah menjadi 1 baris sendiri */
+    text-align: start;
+    margin-top: 25px;
+    border: 1.8px solid;
+    padding: 15px;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-color: #faebd7;
+    color: #3b2f2f;
+    font-family: 'Georgia', serif;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%; /* Tombol menyesuaikan lebar di layar kecil */
+    max-width: 250px; /* Batasi maksimal agar tidak terlalu panjang */
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Media Query untuk Layar Lebih Besar (Tablet ke atas) */
+@media (min-width: 768px) {
+    .text1 {
+        width: 48%;
+    }
+    .type-items {
+        width: 48%;
+        margin-top: 40px;
+    }
+    .btn {
+        width: 40%;
+    }
+}
+
+.text1 #element {
+    color: white;
+}
+
+.text1 hr {
+    width: 50%;
+    margin: auto;
+    border: 3px solid var(--orange);
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+#type {
+    display: none;
+}
+
+.type-items p {
+    font-family: 'Georgia', serif;
+}
+
+.notes {
+    text-align: start;
+}
+
+.type {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.text1 .paraf {
+    font-size: 18px;
+}
